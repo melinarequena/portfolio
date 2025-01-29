@@ -51,7 +51,18 @@ h1:hover{
 }
 
 .main--description{
-    margin: 0;
+    margin-bottom: 5vw;
+}
+
+
+.main--button {
+    background-color: #E42278;
+    color: #F9F9F9;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: Acorn;
+    border-radius: 20px;
+    text-decoration-line: none;
 }
 
 /*---- ABOUT ME ----*/
