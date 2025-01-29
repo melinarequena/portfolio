@@ -6,7 +6,7 @@
 body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(#0e0e0e, #161616, #353535, #E42278);
+    background: linear-gradient(#111111,#161616,#353535, #4e4e4e);
     color: #F9F9F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -57,7 +57,7 @@ h1:hover{
 
 
 .section--aboutMe {
-    height: 100vh;
+    height: 110vh;
     text-align: center;
 
 }
@@ -66,20 +66,26 @@ h1:hover{
     text-transform: uppercase;
     font-family: Acorn;
     text-align: center;
-    font-size: 10vw;
+    padding-top: 10vw;
+    font-size: 8vw;
     color: #E42278;
+    transition: text-shadow, font-size 1s;
 
+}
+
+.section--title:hover {
+    font-size: 10.5vw;
+    text-shadow: 0 0 3px #E42278;
 }
 
 .aboutMe--container {
     margin-top: 0;
     display: inline-flex;
-    padding-top: 5vw;
 }
 
 .aboutMe--description--container {
     margin-left: 2vw;
-    width: 60vw;
+    width: 61vw;
     height: auto;
     font-size: 2.5vw;
     text-align: left;
@@ -90,19 +96,15 @@ h1:hover{
 
 .aboutMe--description1 {
     font-family: Acorn;
-    font-size: 4vw;
+    font-size: 3vw;
+    padding: 1vw;
 }
 
 .aboutMe--description2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 500;
+
 }
-
-
-
-
-
-
 
 .description--degree {
     font-weight: 600;
@@ -113,13 +115,46 @@ h1:hover{
     font-style:italic;
 }
 
-
 .aboutMe--photo {
-    padding: 2vw;
-    margin-right: 2vw;
+    margin: 2vw;
     width: 20vw;
     height: 20vw;
+    border: 0;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 
+    transition: box-shadow 1s;
+
+}
+
+.aboutMe--photo:hover {
+    box-shadow: 0 0 30px #E42278;
+}
+
+
+/*---- STACK ----*/
+
+.section--stack {
+    border-top: 0vw solid transparent;
+    height: 100vh;
+    text-align: center;
+}
+
+.stack--languages, .stack--tools, .stack--learning {
+    text-align: center;
+}
+
+.stack--list{
+    text-align: center;
+    display: inline-flex;
+    
+}
+
+.stack--listed {
+    padding: 1vw;
+    list-style-type: none;
+}
+
+.stack--icon {
+    width: 10vw;
 }
