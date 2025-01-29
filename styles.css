@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100%;
+    height: 100%;   
     width: 100%;
     background: linear-gradient(#111111,#161616,#353535, #4e4e4e);
     color: #F9F9F9;
@@ -59,8 +59,9 @@ h1:hover{
     background-color: #E42278;
     color: #F9F9F9;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 2VW;
     font-family: Acorn;
+    font-size: 2vw;
     border-radius: 20px;
     text-decoration-line: none;
 }
@@ -69,7 +70,7 @@ h1:hover{
 
 
 .section--aboutMe {
-    height: 110vh;
+    height: 100vh;
     text-align: center;
 
 }
@@ -146,24 +147,25 @@ h1:hover{
 /*---- STACK ----*/
 
 .section--stack {
-    border-top: 10vw solid transparent;
     height: 100vh;
+    margin-top: 50vh;
     text-align: center;
 }
 
-.stack--languages, .stack--tools, .stack--learning {
+.stack--languages, .stack--tools, .stack--learning{
     text-align: center;
     text-transform: uppercase;
 }
 
 .stack--list{
+    padding: 0;
     text-align: center;
-    display: inline-flex;
-    margin-right: 33px;
+    display: flex;
+    justify-content: center;
     
 }
 
-.stack--listed {
+.stack--listed, .contactMe--list{
     padding: 1vw;
     list-style-type: none;
 }
@@ -175,37 +177,18 @@ h1:hover{
 
 /*----- CONTACTAME -----*/
 .section--contactMe {
-    border-top: 30vw solid transparent;
+    height: 100vh;
+    margin-top: 50vh;
 
 }
 
-.form--container {
-    width: 70vw;
+
+.contactMe--list {
+    display: flex;
+    justify-content: center;
     margin: auto;
-    padding-bottom: 20vw;
-
-
 }
 
-.form--item {
-    background-color: #4e4e4e;
-    border: none;
-    border-bottom: 2px solid #E42278;
-    border-left: 2px solid #E42278;
-    color: #F9F9F9;
-    border-radius: 10px;
-    width: 70vw;
-    height: 2vw;
-    padding: 1vw;;
-    margin: 2vw;
-    font-family: 'Segoe UI';
-}
-
-.form--button {
-    width: 35vw;
-    height: auto;
-    background-color: #E42278;
-    font-weight: 700;
-    text-transform: uppercase;
-
+.socialMedia--listed {
+    margin: auto;
 }
