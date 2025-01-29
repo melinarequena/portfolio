@@ -1,21 +1,5 @@
-p {
-    color: #E83E8C;
+body {
+    background-color: #0D111A;
+    color: #F9F9F9;
     font-family: sans-serif;
-    font-weight: 400;  
-    font-size: 13px;  
-    text-align: justify;
-    line-height: 1.75;
-    letter-spacing: 0.5px;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-span {
-    font-weight: 700;
 }
