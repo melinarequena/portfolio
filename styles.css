@@ -2,6 +2,9 @@
     font-family: Acorn;
     src: url(fonts/Acorn-Medium.ttf);
 }
+*{
+    scroll-behavior: smooth;
+}
 
 body {
     height: 100%;
@@ -10,6 +13,7 @@ body {
     color: #F9F9F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+
 }
 
 /*---- MAIN ----*/
@@ -17,8 +21,6 @@ body {
 .section--main {
     height: 100vh;
     text-align: center;
-    /*padding: 10vw;*/
-    /*background-color: #242424;*/
     ;
 }
 
@@ -30,14 +32,13 @@ h1 {
     color: #E42278;
     font-size: 8VW;
     margin: 0;
-    transition: text-shadow, font-size 2s;
+    transition: font-size 2s;
 
 
 }
 
 h1:hover{
-    text-shadow: 0 0 3px #E42278;
-    font-size: 8.3vw;
+    font-size: 10vw;
 }
 
 
@@ -69,13 +70,12 @@ h1:hover{
     padding-top: 10vw;
     font-size: 8vw;
     color: #E42278;
-    transition: text-shadow, font-size 1s;
+    transition: font-size 1s;
 
 }
 
 .section--title:hover {
     font-size: 10.5vw;
-    text-shadow: 0 0 3px #E42278;
 }
 
 .aboutMe--container {
@@ -135,18 +135,20 @@ h1:hover{
 /*---- STACK ----*/
 
 .section--stack {
-    border-top: 0vw solid transparent;
+    border-top: 10vw solid transparent;
     height: 100vh;
     text-align: center;
 }
 
 .stack--languages, .stack--tools, .stack--learning {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .stack--list{
     text-align: center;
     display: inline-flex;
+    margin-right: 33px;
     
 }
 
@@ -156,5 +158,43 @@ h1:hover{
 }
 
 .stack--icon {
-    width: 10vw;
+    width: 8vw;
+}
+
+
+/*----- CONTACTAME -----*/
+.section--contactMe {
+    border-top: 30vw solid transparent;
+
+}
+
+.form--container {
+    width: 70vw;
+    margin: auto;
+    padding-bottom: 20vw;
+
+
+}
+
+.form--item {
+    background-color: #4e4e4e;
+    border: none;
+    border-bottom: 2px solid #E42278;
+    border-left: 2px solid #E42278;
+    color: #F9F9F9;
+    border-radius: 10px;
+    width: 70vw;
+    height: 2vw;
+    padding: 1vw;;
+    margin: 2vw;
+    font-family: 'Segoe UI';
+}
+
+.form--button {
+    width: 35vw;
+    height: auto;
+    background-color: #E42278;
+    font-weight: 700;
+    text-transform: uppercase;
+
 }
