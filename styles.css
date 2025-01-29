@@ -1,5 +1,125 @@
+@font-face {
+    font-family: Acorn;
+    src: url(fonts/Acorn-Medium.ttf);
+}
+
 body {
-    background-color: #0D111A;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#0e0e0e, #161616, #353535, #E42278);
     color: #F9F9F9;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/*---- MAIN ----*/
+
+.section--main {
+    height: 100vh;
+    text-align: center;
+    /*padding: 10vw;*/
+    /*background-color: #242424;*/
+    ;
+}
+
+h1 {
+    padding-top: 45vh;
+    padding-bottom: 5px;
+    font-family: Acorn;
+    text-transform: uppercase;
+    color: #E42278;
+    font-size: 8VW;
+    margin: 0;
+    transition: text-shadow, font-size 2s;
+
+
+}
+
+h1:hover{
+    text-shadow: 0 0 3px #E42278;
+    font-size: 8.3vw;
+}
+
+
+.main--description{
+    font-size: 2.5vw;
+    color: #E42278;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.main--description{
+    margin: 0;
+}
+
+/*---- ABOUT ME ----*/
+
+
+.section--aboutMe {
+    height: 100vh;
+    text-align: center;
+
+}
+
+.section--title {
+    text-transform: uppercase;
+    font-family: Acorn;
+    text-align: center;
+    font-size: 10vw;
+    color: #E42278;
+
+}
+
+.aboutMe--container {
+    margin-top: 0;
+    display: inline-flex;
+    padding-top: 5vw;
+}
+
+.aboutMe--description--container {
+    margin-left: 2vw;
+    width: 60vw;
+    height: auto;
+    font-size: 2.5vw;
+    text-align: left;
+}
+.aboutMe--firstContainer {
+    display: inline-flex;
+}
+
+.aboutMe--description1 {
+    font-family: Acorn;
+    font-size: 4vw;
+}
+
+.aboutMe--description2 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+.description--degree {
+    font-weight: 600;
+}
+
+.description--interest {
+    font-weight: 600;
+    font-style:italic;
+}
+
+
+.aboutMe--photo {
+    padding: 2vw;
+    margin-right: 2vw;
+    width: 20vw;
+    height: 20vw;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
 }
