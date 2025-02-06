@@ -2,9 +2,6 @@
     font-family: Acorn;
     src: url(fonts/Acorn-Medium.ttf);
 }
-*{
-    scroll-behavior: smooth;
-}
 
 body {
     height: 100%;   
