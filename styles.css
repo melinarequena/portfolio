@@ -9,7 +9,7 @@
 body {
     height: 100%;   
     width: 100%;
-    background: linear-gradient(#111111,#161616,#353535, #4e4e4e);
+    background: linear-gradient(#111111,#161616,#1b1b1b, #222222);
     color: #F9F9F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -26,11 +26,10 @@ body {
 
 h1 {
     padding-top: 45vh;
-    padding-bottom: 5px;
     font-family: Acorn;
     text-transform: uppercase;
     color: #E42278;
-    font-size: 8VW;
+    font-size: 8vw;
     margin: 0;
     transition: font-size 2s;
 
@@ -43,10 +42,11 @@ h1:hover{
 
 
 .main--description{
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: #E42278;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 0;
 
 }
 
@@ -79,8 +79,8 @@ h1:hover{
     text-transform: uppercase;
     font-family: Acorn;
     text-align: center;
-    padding-top: 10vw;
-    font-size: 8vw;
+    padding-top: 20vh;
+    font-size: 9vw;
     color: #E42278;
     transition: font-size 1s;
 
@@ -96,10 +96,8 @@ h1:hover{
 }
 
 .aboutMe--description--container {
-    margin-left: 2vw;
-    width: 61vw;
+    width: 65vw;
     height: auto;
-    font-size: 2.5vw;
     text-align: left;
 }
 .aboutMe--firstContainer {
@@ -108,14 +106,13 @@ h1:hover{
 
 .aboutMe--description1 {
     font-family: Acorn;
-    font-size: 3vw;
-    padding: 1vw;
+    font-size: max(3vw, 2vh);
+    padding-right: 2vw;
 }
 
 .aboutMe--description2 {
-    font-size: 2vw;
+    font-size: max(2vw, 2vh);
     font-weight: 500;
-
 }
 
 .description--degree {
@@ -129,13 +126,14 @@ h1:hover{
 
 .aboutMe--photo {
     margin: 2vw;
-    width: 20vw;
-    height: 20vw;
+    margin-top: 5vh;
+    width: 25vw;
+    height: 25vw;
     border: 0;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 
-    transition: box-shadow 1s;
+    transition: box-shadow 0.5s;
 
 }
 
@@ -160,7 +158,8 @@ h1:hover{
 .stack--list{
     padding: 0;
     text-align: center;
-    display: flex;
+    display:inline-flex;
+    position: relative;
     justify-content: center;
     
 }
