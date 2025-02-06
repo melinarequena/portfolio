@@ -70,7 +70,7 @@ h1:hover{
 
 
 .section--aboutMe {
-    height: 100vh;
+    height: 100dvh;
     text-align: center;
 
 }
@@ -126,6 +126,7 @@ h1:hover{
 
 .aboutMe--photo {
     margin: 2vw;
+    margin-left: 2.1vw;
     margin-top: 5vh;
     width: 25vw;
     height: 25vw;
@@ -145,7 +146,7 @@ h1:hover{
 /*---- STACK ----*/
 
 .section--stack {
-    height: 100vh;
+    height: 100dvh;
     margin-top: 50vh;
     text-align: center;
 }
@@ -153,30 +154,38 @@ h1:hover{
 .stack--languages, .stack--tools, .stack--learning{
     text-align: center;
     text-transform: uppercase;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+
 }
 
 .stack--list{
     padding: 0;
     text-align: center;
-    display:inline-flex;
-    position: relative;
+    display:flex;
+    flex-wrap: wrap; 
     justify-content: center;
     
 }
 
 .stack--listed, .contactMe--list{
-    padding: 1vw;
+    padding: 1vh;
+    margin-top: 2vw;
     list-style-type: none;
 }
 
 .stack--icon {
-    width: 8vw;
+    width: 8vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
 }
 
 
 /*----- CONTACTAME -----*/
 .section--contactMe {
-    height: 100vh;
+    height: 100dvh;
     margin-top: 50vh;
 
 }
