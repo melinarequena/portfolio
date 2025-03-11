@@ -3,10 +3,10 @@
     src: url(fonts/Acorn-Medium.ttf);
 }
 
-/*html {
+html {
     scroll-snap-type: y mandatory;
 }
-*/
+
 
 body {
     height: 100%;   
@@ -15,25 +15,37 @@ body {
     color: #F9F9F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    box-sizing: border-box;
 
 }
 
-/* SOFT SCROLL
+ /*------- SOFT/SNAP SCROLL --------*/
+
 .section--aboutMe, .section--contactMe, .section--main, .section--stack, .section--title{
     scroll-snap-align: start;
-    /*scroll-snap-stop: always;*
+    scroll-snap-stop: always;
 }
-*/
+
+
+
 /*---- MAIN ----*/
 
-.section--main {
-    height: 100vh;
+
+section {
+    min-height: 100dvh;
+    height: auto;
     text-align: center;
-    ;
+    margin: 2vh 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+
+
 h1 {
-    padding-top: 45vh;
     font-family: Acorn;
     text-transform: uppercase;
     color: #E42278;
@@ -77,20 +89,13 @@ h1:hover{
 /*---- ABOUT ME ----*/
 
 
-.section--aboutMe {
-    height: 100dvh;
-    text-align: center;
-
-}
-
 .section--title {
     text-transform: uppercase;
     font-family: Acorn;
-    text-align: center;
-    padding-top: 20vh;
     font-size: 9vw;
     color: #E42278;
     transition: font-size 1s;
+    margin: 0;
 
 }
 
@@ -99,7 +104,6 @@ h1:hover{
 }
 
 .aboutMe--container {
-    margin-top: 0;
     display: inline-flex;
 }
 
@@ -109,19 +113,26 @@ h1:hover{
     text-align: left;
 }
 .aboutMe--firstContainer {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+
 }
+
 
 .aboutMe--description1 {
     font-family: Acorn;
-    font-size: max(3vw, 2vh);
+    font-size: clamp(18px, 3vw, 40px); 
     padding-right: 2vw;
 }
 
+
+
 .aboutMe--description2 {
-    font-size: max(2vw, 2vh);
+    font-size: clamp(16px, 2vw, 24px);
     font-weight: 500;
 }
+
+
 
 .description--degree {
     font-weight: 600;
@@ -135,10 +146,11 @@ h1:hover{
 .aboutMe--photo {
     margin: 2vw;
     margin-left: 2.1vw;
-    margin-top: 5vh;
-    width: 25vw;
-    height: 25vw;
-    border: 0;
+
+    min-width: 125px;
+    min-height: 125px;
+
+
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 
@@ -153,14 +165,8 @@ h1:hover{
 
 /*---- STACK ----*/
 
-.section--stack {
-    height: 100dvh;
-    margin-top: 50vh;
-    text-align: center;
-}
 
 .stack--languages, .stack--tools, .stack--learning{
-    text-align: center;
     text-transform: uppercase;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -170,7 +176,6 @@ h1:hover{
 
 .stack--list{
     padding: 0;
-    text-align: center;
     display:flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -192,17 +197,13 @@ h1:hover{
 
 
 /*----- CONTACTAME -----*/
-.section--contactMe {
-    height: 100dvh;
-    margin-top: 50vh;
-
-}
 
 
 .contactMe--list {
     display: flex;
     justify-content: center;
     margin: auto;
+
 }
 
 .socialMedia--listed {
