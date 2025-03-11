@@ -3,6 +3,11 @@
     src: url(fonts/Acorn-Medium.ttf);
 }
 
+/*html {
+    scroll-snap-type: y mandatory;
+}
+*/
+
 body {
     height: 100%;   
     width: 100%;
@@ -13,6 +18,12 @@ body {
 
 }
 
+/* SOFT SCROLL
+.section--aboutMe, .section--contactMe, .section--main, .section--stack, .section--title{
+    scroll-snap-align: start;
+    /*scroll-snap-stop: always;*
+}
+*/
 /*---- MAIN ----*/
 
 .section--main {
