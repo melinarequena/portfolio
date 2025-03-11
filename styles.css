@@ -19,7 +19,7 @@ body {
 
 }
 
- /*------- SOFT/SNAP SCROLL --------*/
+/*------- SOFT/SNAP SCROLL --------*/
 
 .section--aboutMe, .section--contactMe, .section--main, .section--stack, .section--title{
     scroll-snap-align: start;
@@ -35,7 +35,7 @@ section {
     min-height: 100dvh;
     height: auto;
     text-align: center;
-    margin: 2vh 0;
+    margin: 20vw 0;
 
     display: flex;
     align-items: center;
