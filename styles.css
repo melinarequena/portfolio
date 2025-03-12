@@ -11,7 +11,7 @@ html {
 body {
     height: 100%;   
     width: 100%;
-    background: linear-gradient(#111111,#161616,#1b1b1b, #222222);
+    background-color: #111111;
     color: #F9F9F9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -26,7 +26,53 @@ body {
     scroll-snap-stop: always;
 }
 
+/* TOGGLE MENU */
 
+header {
+    
+    min-height: 40px;
+    height: 4dvw;
+    width: 100%;
+    border: 3vw;
+    display: flex;
+    color: #E42278;
+    background-color: #111111;
+    position: sticky;
+    top: 0;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#nameHeader {
+    color: #E42278;
+    font-family: Acorn;
+    font-size: clamp(16px, 3vw, 24px);
+    padding: 5dvw;
+}
+
+#toggleMenu {
+
+    display: flex;
+    margin-left: auto;
+    padding: 5dvw;
+
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+i {
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
 
 /*---- MAIN ----*/
 
@@ -203,9 +249,12 @@ h1:hover{
     display: flex;
     justify-content: center;
     margin: auto;
+    background-color: #E42278;
+    border-radius: 20px;
 
 }
 
 .socialMedia--listed {
     margin: auto;
+
 }
